@@ -11,7 +11,7 @@ import { ServicesModule } from './services/services.module';
 // Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { PrincipalModule } from './principal/principal.module';
+import { CompartidoModule } from './compartido/compartido.module';
 import { ModulesComponent } from './modules/modules.component';
 
 @NgModule({
@@ -23,7 +23,7 @@ import { ModulesComponent } from './modules/modules.component';
   imports: [
     BrowserModule,
     App_Routes,
-    PrincipalModule,
+    CompartidoModule,
     ServicesModule,
     HttpModule,
     FormsModule,

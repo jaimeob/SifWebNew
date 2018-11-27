@@ -21,21 +21,17 @@ export class LoginComponent implements OnInit {
    // private toastr: ToastrService
     )
   {
-    
-      this.activatedRoute.params.subscribe(params =>{
-      })
-     
   }
 
   ngOnInit() {
       // localStorage.clear();
-    let token = localStorage.getItem("token");
+    /*let token = localStorage.getItem("token");
     let UsuarioId = JSON.parse(localStorage.getItem('UsuarioId'));
     if(token && UsuarioId){
-      this._router.navigate(['/login',UsuarioId])
+     // this._router.navigate(['/core/principal/',UsuarioId])
     }else{
       this._router.navigate(['/login'])
-    }
+    }*/
   }
   login() {
     this._loginService.getLogin(this.correo,this.contrasena).subscribe (data =>{
@@ -45,7 +41,7 @@ export class LoginComponent implements OnInit {
       if(data.success == true){
         localStorage.setItem('token',data.data.token)
         localStorage.setItem('UsuarioId',data.data.idUsuario)
-        this._router.navigate(['/main',this.idUsuario])
+        //this._router.navigate(['/core/principal/{this.idUsuario}',])
        //this.toastr.success('Bienvenido'); 
 
         

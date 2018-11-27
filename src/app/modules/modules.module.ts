@@ -7,11 +7,13 @@ import { Modules_Routes } from './modules.routes';
 // Componentes Modulos
 import { AdminComponent } from './admin/admin.component';
 import { BarridosComponent } from './barridos/barridos.component';
+import { CoreComponent } from './core/core.component';
 
 @NgModule({
   declarations: [
     AdminComponent,
-    BarridosComponent
+    BarridosComponent,
+    CoreComponent
   ],
   imports: [
     CommonModule,
