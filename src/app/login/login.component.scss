@@ -34,9 +34,7 @@
         padding: .7rem 2rem .7rem .7rem;
         position: relative;
         border-radius: 0;
-        // Chrome and Safari both ignore border-radius on <select>
-        // elements unless -webkit-appearance is overridden to an appropriate value.
-        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+       
         -webkit-appearance: none;
         -moz-appearance: none;
         transition: .2s ease-in;
@@ -132,15 +130,8 @@
 .loginImagen {
 
   width: 80px;
-
-
 } 
-.margenImg {
 
-  width: 500px;
-  margin-left: 400px;
-
-} 
 
 .ui.one {
 
@@ -162,6 +153,9 @@
 //Boton Ingresar
 .ui.fluid {
  background-color: #2EB50F
+
+
+
 }
 
 .inputInicio {

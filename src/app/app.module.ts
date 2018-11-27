@@ -28,7 +28,8 @@ import { HttpModule } from '@angular/http';
     PrincipalModule,
     ServicesModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
