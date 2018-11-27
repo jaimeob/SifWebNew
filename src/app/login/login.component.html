@@ -6,7 +6,7 @@
 <div class="ui one column stackable center aligned page grid center-screen"  >
   <div class="carta">
     
-    <form class="ui large form">
+    <!-- <form class="ui form">
       
       <div class="ui stacked segment">
           <div>
@@ -27,13 +27,36 @@
           </div>
         </div>
 
-        <!-- <div class="field checkbox">
-            <input type="checkbox" required>
-            <label>checkbox</label>
-          </div>   -->
         <div (click)="login()"  class=" ui fluid large teal submit button">Iniciar Sesión</div>
       </div>
       <div class="ui error message"></div>
+    </form> -->
+
+   <form class="ui form">
+    <div class="ui cards">
+      <div class="card">
+        <div class="content">
+          <div>
+            <img  width="500px" src="../assets/login.png"  class="loginImagen" />
+          </div>
+          <div class="description">
+            <div class="field">
+            <input type="text" id="correo" [(ngModel)]="correo" name="correo" type="text" name="email"  required>
+              <label> <i class="user icon"></i>Correo</label>
+            </div>
+            <div class="field">
+              <input  type="password" name="password"   [(ngModel)]="contrasena" name="contrasena" required>
+              <label><i class="lock icon"></i>Password</label>
+            </div>
+            <div class="field checkbox ">
+                <input type="checkbox" required >
+                <label>Recordar</label>
+              </div>
+              <div (click)="login()"  class=" ui fluid large teal submit button">Iniciar Sesión</div>        
+          </div>
+        </div>
+      </div>
+    </div>
     </form>
   </div>
 </div>
