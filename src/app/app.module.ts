@@ -26,7 +26,8 @@ import { ModulesComponent } from './modules/modules.component';
     PrincipalModule,
     ServicesModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
