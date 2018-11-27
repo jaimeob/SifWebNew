@@ -1,27 +1,16 @@
-<div class="ui inverted menu">
-  <div class="header item">Brand</div>
-  <div class="active item">Link</div>
-  <a class="item">Link</a>
-  <div class="ui dropdown item" tabindex="0" (click)="salir()">
-    Dropdown
-    <i class="dropdown icon"></i>
-    <div class="menu" tabindex="-1">
-      <div class="item">Action</div>
-      <div class="item">Another Action</div>
-      <div class="item">Something else here</div>
-      <div class="divider"></div>
-      <div class="item">Separated Link</div>
-      <div class="divider"></div>
-      <div class="item">One more separated link</div>
+<div class="ui fixed inverted main menu">
+    <a>
+      <img class="ui small image" src="../../../assets/images/fincamex-logo1.png" (click)="toggle()">
+    </a>
+    <div class="right menu">
+      <a class="ui item">
+          <i class="bell icon large"></i>
+      </a>
+      <a class="ui item">
+        <i class="user circle icon large"></i>
+      </a>
+      <a class="ui item" (click)="salir()">
+        Logout
+      </a>
     </div>
   </div>
-  <div class="right menu">
-    <div class="item">
-      <div class="ui transparent inverted icon input">
-        <i class="search icon"></i>
-        <input type="text" placeholder="Search">
-      </div>
-    </div>
-    <a (click)="salir()" class="item">Link</a>
-  </div>
-</div>

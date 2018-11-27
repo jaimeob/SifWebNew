@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     let token = localStorage.getItem("token");
     let UsuarioId = JSON.parse(localStorage.getItem('UsuarioId'));
     if(token && UsuarioId){
-      this._router.navigate(['/main',UsuarioId])
+      this._router.navigate(['/login',UsuarioId])
     }else{
       this._router.navigate(['/login'])
     }
