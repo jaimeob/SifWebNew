@@ -1,0 +1,106 @@
+.ui.form {
+
+  // Inputs
+  .field {
+    position: relative;
+    width: 100%;
+
+    &:not(.checkbox) {
+      margin-top: 1rem;
+      margin-bottom: 1.7rem;
+    }
+
+    // Labels`
+    label {
+      color: lightgrey;
+      position: absolute;
+      left: .7rem;
+      top: .7rem;
+      transition: .2s ease-in;
+    }
+
+    
+
+    input:not([type=checkbox]),
+    textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid lightgrey;
+      border-radius: 0;
+      padding: .7rem;
+      transition: .2s ease-in;
+
+      &:focus ~ label,
+      &:valid ~ label {
+        color: grey;
+        font-size: 80%;
+        top: -1rem;
+        left: 0;
+      }
+
+      &:focus {
+        border-bottom: 2px solid dodgerblue;
+        outline: none;
+      }
+    }
+  }
+
+}
+
+
+.loginImagen {
+
+  width: 80px;
+
+
+} 
+.margenImg {
+
+  width: 500px;
+  margin-left: 400px;
+
+} 
+
+.ui.one {
+
+  margin-top: -100px;
+
+} 
+
+
+.login-register {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 10% 0;
+  position: fixed;
+} 
+
+//Boton Ingresar
+.ui.fluid {
+ background-color: #2EB50F
+}
+
+.inputInicio {
+border-color: red
+}
+.margenImg {
+margin-top: 8px;
+}
+.carta {
+  width: 350px;
+  }
+
+  .center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+
+  
