@@ -12,7 +12,7 @@ const appRoutes: Routes = [
         loadChildren: './modules/modules.module#ModulesModule'
     },
     { path: 'main/:id', component: MainComponent },
-    { path: '** ', component: LoginComponent}
+    { path: 'login ', component: LoginComponent}
 ];
 
 export const App_Routes = RouterModule.forRoot( appRoutes, { useHash: true });
