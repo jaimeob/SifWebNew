@@ -1,43 +1,42 @@
-<div>
+<div class="backlogin">
   <br>
-<img class="ui centered large image" src="../assets/fincamexLogoGrande.png" />
-</div>
+  <img class="ui centered large image" src="../assets/fincamexLogoGrande.png" />
 
-<div class="ui one column stackable center aligned page grid center-screen"  >
-  <div class="carta">
-    
-    <form class="ui large form">
+  <div class="ui one column stackable center aligned page grid center-screen"  >
+    <div class="carta">
       
-      <div class="ui stacked segment">
-          <div>
-              <img  width="500px" src="../assets/login.png"  class="loginImagen" />
+      <form class="ui large form">
+        
+        <div class="ui stacked segment">
+            <div>
+                <img  width="500px" src="../assets/login.png"  class="loginImagen" />
+            </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <input id="correo" [(ngModel)]="correo" name="correo" type="text" name="email" placeholder="Correo Electronico" >
+              <label>Usuario de dominio</label>
+            </div>
           </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="user icon"></i>
-            <input id="correo" [(ngModel)]="correo" name="correo" type="text" name="email" placeholder="Correo Electronico" >
-            <label>Usuario de dominio</label>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="password" name="password" placeholder="Password"  [(ngModel)]="contrasena" name="contrasena">
+              <label>Contraseña</label>
+            </div>
           </div>
-        </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password"  [(ngModel)]="contrasena" name="contrasena">
-            <label>Contraseña</label>
-          </div>
-        </div>
 
-        <!-- <div class="field checkbox">
-            <input type="checkbox" required>
-            <label>checkbox</label>
-          </div>   -->
-        <div (click)="login()"  class=" ui fluid large teal submit button">Iniciar Sesión</div>
-      </div>
-      <div class="ui error message"></div>
-    </form>
+          <!-- <div class="field checkbox">
+              <input type="checkbox" required>
+              <label>checkbox</label>
+            </div>   -->
+          <div (click)="login()"  class=" ui fluid large teal submit button">Iniciar Sesión</div>
+        </div>
+        <div class="ui error message"></div>
+      </form>
+    </div>
   </div>
 </div>
-
 
 
         
