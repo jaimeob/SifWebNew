@@ -9,13 +9,22 @@
         <div class="ui star rating" data-rating="2"></div>
       </div>
     </div> -->
-    <div class="ui fluid card" *ngFor="let empresa of empresasArray">
-      <div class="image " >
-        <img src="/assets/fincamex-logo.png">
+    <!-- <div class="ui fluid card" *ngFor="let empresa of empresasArray"> -->
+      <div class="ui link cards" >
+        <div class="card" *ngFor="let empresa of empresasArray" style="width:180px;">
+          <div class="image">
+            <img src="/assets/{{empresa.Nombre}}.png">
+          </div>
+          <div class="content">
+            <div class="header">{{empresa.Nombre}}</div>
+          
+          
+          </div>
+         
+        </div>
+   
+       
       </div>
-      <div class="content">
-        <a class="header">{{empresa.Nombre}}</a>
-      </div>
-    </div>
+    <!-- </div> -->
     
 </div>
