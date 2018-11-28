@@ -5,15 +5,29 @@ import { CommonModule } from '@angular/common';
 import { Modules_Routes } from './modules.routes';
 
 // Componentes Modulos
-import { AdminComponent } from './admin/admin.component';
-import { BarridosComponent } from './barridos/barridos.component';
-import { CoreComponent } from './core/core.component';
+import { CreateUsuarioComponent } from './admin/usuario/create-usuario.component';
+import { DetailUsuarioComponent } from './admin/usuario/detail-usuario.component';
+import { EditUsuarioComponent } from './admin/usuario/edit-usuario.component';
+import { CreateModuloComponent } from './admin/modulo/create-modulo.component';
+import { DetailModuloComponent } from './admin/modulo/detail-modulo.component';
+import { EditModuloComponent } from './admin/modulo/edit-modulo.component';
+import { CreateBarridoComponent } from './barridos/barrido/create-barrido.component';
+import { DetailBarridoComponent } from './barridos/barrido/detail-barrido.component';
+import { EditBarridoComponent } from './barridos/barrido/edit-barrido.component';
+import { PrincipalComponent } from './core/principal/principal.component';
 
 @NgModule({
   declarations: [
-    AdminComponent,
-    BarridosComponent,
-    CoreComponent
+    CreateUsuarioComponent,
+    DetailUsuarioComponent,
+    EditUsuarioComponent,
+    CreateModuloComponent,
+    DetailModuloComponent,
+    EditModuloComponent,
+    CreateBarridoComponent,
+    DetailBarridoComponent,
+    EditBarridoComponent,
+    PrincipalComponent
   ],
   imports: [
     CommonModule,

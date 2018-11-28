@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
       if(data.success == true){
         localStorage.setItem('token',data.data.token)
         localStorage.setItem('UsuarioId',data.data.idUsuario)
-        //this._router.navigate(['/core/principal/{this.idUsuario}',])
+        this._router.navigate(['/principal'])
        //this.toastr.success('Bienvenido'); 
 
         

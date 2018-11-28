@@ -21,8 +21,10 @@ export class UsuarioService {
     private http:Http,
     private _httpClient: HttpClient,
     ) { }
-    getLogin(correo,contrasena){ 
-      console.log(correo,contrasena)
+
+
+  getLogin(correo,contrasena){ 
+  console.log(correo,contrasena)
     return this.http.post(this.loginUrl,{usuario: correo,contrasena:contrasena}).map(res=>res.json());
   }
 
