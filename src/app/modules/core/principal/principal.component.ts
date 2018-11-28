@@ -23,18 +23,16 @@ export class PrincipalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    //this.getEmpresas()
+    this.getEmpresas()
   }
 
   getEmpresas() {
     let token = localStorage.getItem("token");
-    //let UsuarioId = JSON.parse(localStorage.getItem('UsuarioId'));
-    let UsuarioId = 1
+    let UsuarioId = JSON.parse(localStorage.getItem('UsuarioId'));
     this._empresasService.obtenerEmpresas(UsuarioId,token).subscribe (data =>{
       this.empresasArray = data.data;
        console.log(this.empresasArray,"las empresas")
      })
-     //error=>this.toastr.error('No se han encontrado los datos'));
 
   }
 
