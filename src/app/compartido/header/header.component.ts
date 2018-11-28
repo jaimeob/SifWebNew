@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute, Params } from '@angular/router';
 
+declare var $:any;
 
 @Component({
   selector: 'app-header',
@@ -16,12 +17,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-    salir() {
-      console.log("Salir")
-      localStorage.clear();
-      this._router.navigate(['/login'])
-    }
+  salir() {
+    console.log("Salir")
+    localStorage.clear();
+    this._router.navigate(['/login'])
+  }
 
-
-
+  toggle():void {
+    $('.ui.labeled.icon.sidebar').sidebar('toggle')
+  }
 }
