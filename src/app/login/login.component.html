@@ -1,71 +1,47 @@
 <div class="backlogin">
   <br>
   <br>
-  <img   class="ui centered large image" src="../../assets/fincamexLogoGrande.png" />
+  <!-- <img   class="ui centered large image" src="../../assets/fincamexLogoGrande.png" /> -->
+  <img   src="../../assets/fincamexLogoGrande.png" class="ui centered ui medium image" alt="Responsive image">
+<div class="ui container">
+  <div class="ui one column stackable center aligned page grid center-screen"  >
+    <div class="carta">
 
-<div class="ui one column stackable center aligned page grid center-screen"  >
-  <div class="carta">
-    
-    <!-- <form class="ui form">
-      
-      <form class="ui large form">
-        
-        <div class="ui stacked segment">
+    <form class="ui form ui centered">
+      <div class="ui cards ui centered">
+        <div class="card">
+          <div class="content">
             <div>
-                <img  width="500px" src="../assets/login.png"  class="loginImagen" />
+              <img  width="500px" src="../assets/login.png"  class="loginImagen" />
+              
             </div>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="user icon"></i>
-              <input id="correo" [(ngModel)]="correo" name="correo" type="text" name="email" placeholder="Correo Electronico" >
-              <label>Usuario de dominio</label>
-            </div>
-          </div>
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="lock icon"></i>
-              <input type="password" name="password" placeholder="Password"  [(ngModel)]="contrasena" name="contrasena">
-              <label>Contraseña</label>
-            </div>
-          </div>
-
-        <div (click)="login()"  class=" ui fluid large teal submit button">Iniciar Sesión</div>
-      </div>
-      <div class="ui error message"></div>
-    </form> -->
-
-   <form class="ui form">
-    <div class="ui cards">
-      <div class="card">
-        <div class="content">
-          <div>
-            <img  width="500px" src="../assets/login.png"  class="loginImagen" />
-          </div>
-          <div class="description">
-            <div class="field">
-            <input type="text" id="correo" [(ngModel)]="correo" name="correo" type="text" name="email"  required>
-              <label> <i class="user icon"></i>Correo</label>
-            </div>
-            <div class="field">
-              <input  type="password" name="password"   [(ngModel)]="contrasena" name="contrasena" required>
-              <label><i class="lock icon"></i>Password</label>
-            </div>
-            <div class="field checkbox ">
-                <input type="checkbox" required >
-                <label>Recordar</label>
+            <div class="description">
+              <div class="field">
+              <input type="text" id="correo" [(ngModel)]="correo" name="correo" type="text" name="email"  required>
+                <label> <i class="user icon"></i>Correo</label>
               </div>
-             
-              <button  (click)="login()"  class="positive ui button ui fluid large teal ">Iniciar Sesión</button>     
+              <div class="field">
+                <input  type="password" name="password"   [(ngModel)]="contrasena" name="contrasena" required>
+                <label><i class="lock icon"></i>Password</label>
+              </div>
+              <div class="field checkbox ">
+                  <input type="checkbox" required >
+                  <label>Recordar</label>
+                </div>
+              
+                <button  (click)="login()"  class="positive ui button ui fluid large teal ">Iniciar Sesión</button>     
+            </div>
           </div>
         </div>
       </div>
+      </form>
     </div>
-    </form>
   </div>
 </div>
 
 
-<div class="ui positive message">
+
+<!-- <div class="ui positive message">
     <i class="close icon"></i>
     <div class="header">
       You are eligible for a reward
@@ -73,4 +49,4 @@
     <p>Go to your <b>special offers</b> page to see now.</p>
   </div>
 
-        
+         -->
