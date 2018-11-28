@@ -16,7 +16,7 @@ export class AppComponent {
     private activatedRoute: ActivatedRoute,
     )
   {
-     this._router.navigate(['/login'])
+    // this._router.navigate(['/login'])
 
      
   }
